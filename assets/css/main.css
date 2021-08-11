@@ -1,5 +1,9 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+@font-face {
+  font-family: "文泉驿微米黑";
+  src: url("/assets/QWQ.ttf");
+}
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -112,11 +116,11 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #f56a6a;
+  color: #2cc6ed;
   text-decoration: none; }
   a:hover {
-    border-bottom-color: #f56a6a;
-    color: #f56a6a !important; }
+    border-bottom-color: #2cc6ed;
+    color: #2cc6ed !important; }
     a:hover strong {
       color: inherit; }
 
@@ -132,7 +136,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #3d4449;
-  font-family: "WenQuanYi Micro Hei", sans-serif;
+  font-family: '文泉驿微米黑', '微软雅黑';
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1em 0; }
@@ -196,14 +200,14 @@ code {
   background: rgba(230, 235, 237, 0.25);
   border-radius: 0.375em;
   border: solid 1px rgba(210, 215, 217, 0.75);
-  font-family: "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Sans-serif", monospace;
   font-size: 0.9em;
   margin: 0 0.25em;
   padding: 0.25em 0.65em; }
 
 pre {
   -webkit-overflow-scrolling: touch;
-  font-family: "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Courier New", monospace;
   font-size: 0.9em;
   margin: 0 0 2em 0; }
   pre code {
@@ -990,7 +994,7 @@ section.special, article.special {
   text-align: center; }
 
 header p {
-  font-family: "WenQuanYi Micro Hei", sans-serif;
+  font-family: sans-serif;
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -998,7 +1002,7 @@ header p {
   text-transform: uppercase; }
 
 header.major > :last-child {
-  border-bottom: solid 3px #f56a6a;
+  border-bottom: solid 3px #2cc6ed;
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0; }
@@ -1056,8 +1060,8 @@ textarea {
   input[type="url"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #f56a6a;
-    box-shadow: 0 0 0 1px #f56a6a; }
+    border-color: #2cc6ed;
+    box-shadow: 0 0 0 1px #2cc6ed; }
 
 select {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(210, 215, 217, 0.75)' /%3E%3C/svg%3E");
@@ -1120,7 +1124,7 @@ input[type="radio"] {
       text-rendering: auto;
       line-height: 1;
       text-transform: none !important;
-      font-family: 'WenQuanYi Micro Hei';
+      font-family: 'Font Awesome 5 Free';
       font-weight: 900; }
     input[type="checkbox"] + label:before,
     input[type="radio"] + label:before {
@@ -1145,8 +1149,8 @@ input[type="radio"] {
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
-    border-color: #f56a6a;
-    box-shadow: 0 0 0 1px #f56a6a; }
+    border-color: #2cc6ed;
+    box-shadow: 0 0 0 1px #2cc6ed; }
 
 input[type="checkbox"] + label:before {
   border-radius: 0.375em; }
@@ -1199,7 +1203,7 @@ input[type="radio"] + label:before {
     text-rendering: auto;
     line-height: 1;
     text-transform: none !important;
-    font-family: 'WenQuanYi Micro Hei';
+    font-family: 'Font Awesome 5 Free';
     font-weight: 400; }
   .icon > .label {
     display: none; }
@@ -1208,7 +1212,7 @@ input[type="radio"] + label:before {
   .icon.solid:before {
     font-weight: 900; }
   .icon.brands:before {
-    font-family: 'WenQuanYi Micro Hei'; }
+    font-family: 'Font Awesome 5 Brands'; }
 
 /* Image */
 .image {
@@ -1373,10 +1377,10 @@ ul.contact {
       text-rendering: auto;
       line-height: 1;
       text-transform: none !important;
-      font-family: 'WenQuanYi Micro Hei';
+      font-family: 'Font Awesome 5 Free';
       font-weight: 400; }
     ul.contact li:before {
-      color: #f56a6a;
+      color: #2cc6ed;
       display: inline-block;
       font-size: 1.5em;
       height: 1.125em;
@@ -1421,7 +1425,7 @@ ul.pagination {
       padding: 0 0.5em;
       text-align: center; }
       ul.pagination li > .page.active {
-        background-color: #f56a6a;
+        background-color: #2cc6ed;
         color: #ffffff !important; }
         ul.pagination li > .page.active:hover {
           background-color: #f67878; }
@@ -1495,11 +1499,11 @@ button,
   background-color: transparent;
   border-radius: 0.375em;
   border: 0;
-  box-shadow: inset 0 0 0 2px #f56a6a;
-  color: #f56a6a !important;
+  box-shadow: inset 0 0 0 2px #2cc6ed;
+  color: #2cc6ed !important;
   cursor: pointer;
   display: inline-block;
-  font-family: "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-size: 0.8em;
   font-weight: 700;
   height: 3.5em;
@@ -1553,7 +1557,7 @@ button,
   input[type="button"].primary,
   button.primary,
   .button.primary {
-    background-color: #f56a6a;
+    background-color: #2cc6ed;
     box-shadow: none;
     color: #ffffff !important; }
     input[type="submit"].primary:hover,
@@ -1642,7 +1646,7 @@ button,
       text-align: center;
       width: 10em; }
       .features article .icon:before {
-        color: #f56a6a;
+        color: #2cc6ed;
         font-size: 2.75rem;
         position: relative;
         top: 0.05em; }
@@ -1892,7 +1896,7 @@ button,
     text-rendering: auto;
     line-height: 1;
     text-transform: none !important;
-    font-family: 'WenQuanYi Micro Hei';
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900; }
   #search form:before {
     -moz-transform: scaleX(-1);
@@ -1984,7 +1988,7 @@ button,
       text-rendering: auto;
       line-height: 1;
       text-transform: none !important;
-      font-family: 'WenQuanYi Micro Hei';
+      font-family: 'Font Awesome 5 Free';
       font-weight: 900; }
     #sidebar .toggle:before {
       content: '\f0c9';
@@ -2075,7 +2079,7 @@ button,
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  border-bottom: solid 5px #f56a6a;
+  border-bottom: solid 5px #2cc6ed;
   padding: 6em 0 1em 0;
   position: relative; }
   #header > * {
@@ -2087,7 +2091,7 @@ button,
   #header .logo {
     border-bottom: 0;
     color: inherit;
-    font-family: "WenQuanYi Micro Hei", sans-serif;
+    font-family: "Roboto Slab", serif;
     font-size: 1.125em; }
   #header .icons {
     text-align: right; }
@@ -2199,7 +2203,7 @@ button,
   -ms-user-select: none;
   user-select: none;
   color: #3d4449;
-  font-family: "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   letter-spacing: 0.075em;
   list-style: none;
@@ -2214,7 +2218,7 @@ button,
     font-size: 0.9em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
-      color: #f56a6a; }
+      color: #2cc6ed; }
     #menu ul a.opener, #menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
@@ -2232,7 +2236,7 @@ button,
         text-rendering: auto;
         line-height: 1;
         text-transform: none !important;
-        font-family: 'WenQuanYi Micro Hei';
+        font-family: 'Font Awesome 5 Free';
         font-weight: 900; }
       #menu ul a.opener:before, #menu ul span.opener:before {
         -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
@@ -2244,7 +2248,7 @@ button,
         position: absolute;
         right: 0; }
       #menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
-        color: #f56a6a; }
+        color: #2cc6ed; }
       #menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
         display: block; }
       #menu ul a.opener.active:before, #menu ul span.opener.active:before {
