@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>序 死亡</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="icon.png" rel="icon" sizes="16x16">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+						  <header id="header">
+									<a href="index.html" class="logo">QWQ by doubi1256</a>
+									
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>5分钟入门/execute指令</h1>
+									</header>
+
+
+
+							      <p style="font-size: 1.5em">/execute的简单使用方法&nbsp;</p>
+							      <p>首先我们进入游戏，输入/execute加空格，然后就能看到很多的子命令</p>
+							      <p>因为/execute真的每个标签都搞懂很难，我这里只会讲最基础的</p>
+							      <p style="font-size: 1.5em">run&nbsp;</p>
+							      <p>首先是最简单的run（执行）</p>
+							      <p>&nbsp;基本格式： /execure run 命令（命令不带/)&nbsp;</p>
+							      <p>示例：</p>
+							      <p>&nbsp;/execute run kill @s（执行后会自我了断）&nbsp;</p>
+							      <p>其效果和/kill @s相同。</p>
+							      <p>&nbsp;有同学就会问了，那逗比，这个execute指令没啥用的样子啊我为什么要学！&nbsp;</p>
+							      <p>别急，execute指令必须要和其他子命令一起运用才能玩出花哦&nbsp;</p>
+							      <p style="font-size: 1.5em">as</p>
+							      <p>&nbsp;这个标签可重要了，会改变命令的执行者 如果你有选择器基础的话就很好讲了，不过没有也没关系，直接上示例&nbsp;</p>
+							      <p>示例： /execute as @e[type=villager] run kill @s （全部的村民自我了断）</p>
+							      <p>&nbsp;这里的@e后面的[type=]就是选择器了。[type=]选择了实体，[name=xx]就是选择名字为xx的实体。&nbsp;</p>
+							      <p>我使用了as子命令，就改变了指令的效果。</p>
+							      <p style="font-size: 1.5em">at&nbsp;</p>
+							      <p>这个标签也很重要，会改变命令的执行位置 这么说听起来很抽象，同样我会使用范例来给大家讲解&nbsp;</p>
+							      <p>首先我们假设，世界内存在6只村民</p>
+							      <p>&nbsp;示例：</p>
+							      <p>&nbsp;/execute at @e[type=villager] run summon cat ~ ~ ~ (在所有村民的脚下生成一只猫)&nbsp;</p>
+							      <p>如果我将at换成as，结果则是</p>
+							      <p>&nbsp;示例：</p>
+							      <p>&nbsp;/execute as @e[type=villager] run summon cat ~ ~ ~ (在我的脚底下生成6只猫)&nbsp;</p>
+                                  <p>这很简单，as只改变了命令的使用者，而没有改变命令的使用位置&nbsp;</p>
+                                  <p>而at改变了命令的使用位置，将相对坐标的坐标轴定义到了所选对象上。</p>
+                                  <p style="font-size: 1.5em">in&nbsp;</p>
+                                  <p>或许有人会和at搞混，但这个子命令的作用是改变命令执行的维度&nbsp;</p>
+                                  <p>这个子命令很常见，比如我们按下F3+C，就可以复制自身的坐标&nbsp;</p>
+                                  <p>示例：</p>
+                                  <p>&nbsp;/execute in the_end run tp 114 51 419 (传送到末地的坐标为114 51 419的地点)&nbsp;</p>
+                                  <p>下面是简单的条件命令部分，我只讲if/unless里的block</p>
+                                  <p style="font-size: 1.5em">if/unless(如果/除非)&nbsp;</p>
+                                  <p>请用字面意义来理解。&nbsp;</p>
+                                  <p>if是如果...就执行命令 而unless是执行命令，除非... block是其中的的一个参数</p>
+                                  <p>&nbsp;格式为 if/unless block 坐标 方块id&nbsp;</p>
+                                  <p>接下来让我们把所有元素结合起来——&nbsp;</p>
+                                  <p>示例：</p>
+                                  <p>&nbsp;/execute as @e[type=villager] at @s if block ~ ~-1 ~ white_wool run kill @s&nbsp;</p>
+                                  <p>(如果村民站在白色羊毛上，就会自我了断) (这里必须指定命令执行位置，否则一只村民站在白色羊毛上，所有村民都会自我了断)&nbsp;</p>
+                                  <p>（下面unless同理，如果村民没站在白色羊毛上，就会自我了断）</p>
+                                  <p>&nbsp;/execute as @e[type=villager] at @s unless block ~ ~-1 ~ white_wool run kill @s </p>
+<hr class="major" />
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="†俺は辞退する†" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>菜单&nbsp;</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">主页</a></li>
+										<li><a href="generic.html">序 笔记 #1 #2</a></li>
+										<li><a href="elements.html">序 死亡</a></li>
+										<li><a href="https://www.baidu.com" target="_blank">百度</a></li>
+										<li><a href="https://www.zhihu.com" target="_blank">知乎</a></li>
+										<li><a href="https://www.bilibili.com" target="_blank">b站</a></li>
+										<li><a href="#">404</a></li>
+										<li><a href="#">502</a></li>
+										<li>
+											<span class="opener">未实装菜单</span>
+											<ul>
+												<li><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">未实装菜单2</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>视频</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+										  <p><a href="https://www.bilibili.com/video/BV1f741127Qv/" target="_blank">将钻石镐标记为可破坏基岩会怎么样？【逗比1256】</a></p>
+                                        </article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+										  <p><a href="https://www.bilibili.com/video/BV18E411D7EH/" target="_blank">将手持不死图腾的僵尸推入水中会怎么样？【逗比1256】</a></p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+										  <p><a href="https://www.bilibili.com/video/BV1z4411s7Rx/" target="_blank">村民要睡觉时将其房子改造成迷宫会怎么样？【逗比1256】</a></p>
+										</article>
+									</div>
+									<ul class="actions">
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>联系方式</h2>
+									</header>
+									<p>bilibili @逗比吃货1256</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope">doubi1256@outlook.com&nbsp;</li>
+										<li class="icon solid fa-phone">(QQ)1765062183&nbsp;</li>
+										<li class="icon solid fa-home">&nbsp;bilibili @逗比吃货1256</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright"> <a href="https://unsplash.com">&nbsp;</a> <a href="https://html5up.net">&nbsp;</a></p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
